@@ -6,7 +6,7 @@ The default configuration is set for Angular projects, but it can be easily cust
 
 ## Installation
 
-Using `LazyVim`, create a new file in `~/.config/nvim/lua/lazy-plugins/same-folder-file-cycle.lua` and add the following:
+Using `LazyVim`, create a new file in `~/.config/nvim/lua/plugins/same-folder-file-cycle.lua` and add the following:
 
 ```lua
 return {
@@ -16,7 +16,7 @@ return {
 }
 ```
 
-Then, add keymaps in `~/.config/nvim/lua/lazy-plugins/keymaps.lua`:
+Then, add keymaps in `~/.config/nvim/lua/config/keymaps.lua`:
 
 ```lua
 local sffc = require("same-folder-file-cycle")
