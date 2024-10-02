@@ -19,6 +19,10 @@ return {
 Then, add keymaps in `~/.config/nvim/lua/config/keymaps.lua`:
 
 ```lua
+local function opts_desc(desc)
+  return { desc = desc, noremap = true, silent = true }
+end
+
 local sffc = require("same-folder-file-cycle")
 vim.keymap.set("n", "<leader>au", sffc.switch_to_ts, opts_desc("Switch to TypeScript"))
 vim.keymap.set("n", "<leader>ai", sffc.switch_to_html, opts_desc("Switch to HTML"))
