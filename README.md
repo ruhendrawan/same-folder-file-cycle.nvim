@@ -41,7 +41,7 @@ local sffc = require("same-folder-file-cycle")
 sfcc.extensions = {
   primary = "php",  -- Controller file
   secondary = "blade.php",  -- Blade template for the view
-  allowed = { "php", "blade.php", "css" },
+  allowed = { "blade.php", "php", "css" }, -- Two level extension first (blade.php)
 }
 vim.keymap.set("n", "<leader>au", sffc.switch_to({ext="php"}), opts_desc("Switch to Code"))
 vim.keymap.set("n", "<leader>ai", sffc.switch_to({ext="blade"}), opts_desc("Switch to HTML"))
